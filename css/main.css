@@ -1,0 +1,62 @@
+body {
+  background-color: #0071bc; /* primary */
+  background-image:
+  radial-gradient(
+      circle closest-corner,
+      #00a6d2, /* primary-alt-dark */
+      #0071bc  /* primary */
+    );
+  color: #212121;
+}
+
+body > header {
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  background-color: #323a45;
+  color: white;
+  padding: 3rem 3rem 0;
+}
+
+@media (min-width: 700px) {
+  footer {
+    margin-top: 5rem;
+  }
+}
+
+footer .usa-footer-logo-img {
+  max-height: 10rem;
+  max-width: 10rem;
+  vertical-align: middle;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+}
+
+.usa-disclaimer {
+  background-color: #112e51; /* primary-darkest */
+}
+
+#benefits-form > div {
+  background-color: white;
+
+  max-width: 70rem;
+}
+
+#benefits-form {
+  margin-top: 3rem;
+}
+
+#benefits-form legend {
+  padding-top: 3rem;
+}
+
+#benefits-form input[type=submit] {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
