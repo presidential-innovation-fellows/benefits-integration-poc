@@ -84,6 +84,15 @@
   <meta name="twitter:image" content="https://benefits.pif.gov/img/open-graph.jpg" />
   -->
 
+  <script>
+    // yes, this is a hack -- no, it's not secure
+    var password = prompt('This is an internal demo site currently in alpha. ' +
+                          'This is not real.\n\nPlease enter password to continue.')
+      if (password !== 'strawperson') {
+        alert('Unauthorized');
+        window.location = 'https://www.usa.gov/';
+      }
+  </script>
   </head>
 
   <body>
