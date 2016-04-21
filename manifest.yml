@@ -1,0 +1,10 @@
+---
+applications:
+- name: application-poc
+  memory: 16M
+  instances: 1
+  host: benefits
+  domain: pif.gov
+  buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  env:
+    FORCE_HTTPS: true
