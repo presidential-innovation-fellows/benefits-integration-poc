@@ -84,34 +84,31 @@ fieldset#ssn {
 .verification {
   background-position: center center;
   background-size: contain;
-  height: 16px;
-  width: 24px;
+  background-repeat: no-repeat;
+  height: 15px;
+  width: 16px;
   position: absolute;
   top: 3px;
-  left: -27px;
+  left: -22px;
 }
 
 .verification.ssn {
   top: 107px;
+  left: -22px;
 }
 
 .verification.success {
-  background-image: url("../uswds-0.9.1/img/alerts/success.png");
-  background-image: url("../uswds-0.9.1/img/alerts/success.svg");
-  height: 23px;
+  background-image: url("../img/success-color.png");
 }
 
 .verification.error {
-  background-image: url("../uswds-0.9.1/img/alerts/error.png");
-  background-image: url("../uswds-0.9.1/img/alerts/error.svg");
+  background-image: url("../img/error-color.png");
 }
 
 .verification.warning {
-  background-image: url("../uswds-0.9.1/img/alerts/warning.png");
-  background-image: url("../uswds-0.9.1/img/alerts/warning.svg");
+  background-image: url("../img/warning-color.png");
 }
 
 .verification.info {
-  background-image: url("../uswds-0.9.1/img/alerts/info.png");
-  background-image: url("../uswds-0.9.1/img/alerts/info.svg");
+  background-image: url("../img/info-color.png");
 }
