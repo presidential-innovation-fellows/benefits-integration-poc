@@ -86,12 +86,15 @@
 
   <script>
     // yes, this is a hack -- no, it's not secure
-    var password = prompt('This is an internal demo site currently in alpha. ' +
-                          'This is not real.\n\nPlease enter password to continue.')
+    if (window.location.hostname !== '0.0.0.0') {
+      var password = prompt('This is an internal demo site.' +
+                            '\nThis is not real.' +
+                            '\n\nPlease enter password to continue.');
       if (password !== 'strawperson') {
         alert('Unauthorized');
         window.location = 'https://www.usa.gov/';
       }
+    }
   </script>
   </head>
 
