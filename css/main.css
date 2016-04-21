@@ -57,6 +57,11 @@ footer .usa-footer-logo-img {
 }
 
 #benefits-form input[type=submit] {
-  margin-top: 5rem;
-  margin-bottom: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.populate {
+  float: right;
+  margin-top: 2em;
 }

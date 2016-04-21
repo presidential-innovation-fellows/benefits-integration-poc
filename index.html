@@ -134,6 +134,8 @@
       <section id="benefits-form">
         <div class="usa-grid">
           <div class="usa-width-one-whole">
+            <button class="populate usa-button-gray"
+                    id="populate">Populate</button>
             <form>
               <fieldset>
                 <legend>Your full name</legend>
@@ -149,7 +151,7 @@
 
               <fieldset>
                 <legend>Date of birth</legend>
-                <span class="usa-form-hint usa-datefield-hint" id="dobHint">For example: 04 28 1986</span>
+                <span class="usa-form-hint usa-datefield-hint" id="dobHint">For example: 4-28-1986</span>
 
                 <div class="usa-date-of-birth">
                   <div class="usa-datefield usa-form-group usa-form-group-month">
@@ -169,7 +171,7 @@
 
               <fieldset>
                 <legend>Social Security Number</legend>
-                <span class="usa-form-hint usa-datefield-hint" id="ssnHint">For example: 555 44 3210</span>
+                <span class="usa-form-hint usa-datefield-hint" id="ssnHint">For example: 555-44-3210</span>
 
                 <div class="usa-date-of-birth">
                   <div class="usa-datefield usa-form-group usa-form-group-month">
@@ -184,14 +186,29 @@
                 </div>
               </fieldset>
 
-              <fieldset>
-                <legend>Monthly income</legend>
-                <input aria-describedby="income" class="usa-form-control" id="income" name="income" pattern="[0-9]+" type="number" min="0" value="" required="" aria-required="true">
-              </fieldset>
-
-              <fieldset>
-                <legend>Number of children</legend>
-                <input aria-describedby="children" class="usa-form-control" id="children" name="children" pattern="[0-9]+" type="number" min="0" value="" required="" aria-required="true">
+              <fieldset class="usa-fieldset-inputs usa-sans">
+                <legend>About you</legend>
+                <span class="usa-form-hint usa-datefield-hint">Please check the boxes that apply to you.</span>
+                <br>
+                <br>
+                <ul class="usa-unstyled-list">
+                  <li>
+                    <input id="citizen" type="checkbox" name="citizen" value="citizen">
+                    <label for="citizen">I am a citizen of the United States</label>
+                  </li>
+                  <li>
+                    <input id="title2" type="checkbox" name="title2" value="title2">
+                    <label for="title2">I receive Title 2 income for a disability</label>
+                  </li>
+                  <li>
+                    <input id="married" type="checkbox" name="married" value="married">
+                    <label for="married">I am married</label>
+                  </li>
+                  <li>
+                    <input id="employed" type="checkbox" name="empllyed" value="employed">
+                    <label for="employed">I am employed full-time</label>
+                  </li>
+                </ul>
               </fieldset>
 
               <input type="submit" class="usa-button-big usa-button-secondary" value="Verify your information">
