@@ -114,8 +114,7 @@
         </div>
       </aside>
 
-
-      <div class="use-content benefits-banner">
+      <div class="usa-content benefits-banner">
         <div class="usa-grid">
           <div class="usa-width-one-whole">
             <h1>Can I apply for benefits?</h1>
@@ -134,6 +133,14 @@
       <section id="benefits-form">
         <div class="usa-grid">
           <div class="usa-width-one-whole">
+
+            <div class="usa-alert usa-alert-error" role="alert" id="error">
+              <div class="usa-alert-body">
+                <h3 class="usa-alert-heading">Error</h3>
+                <p class="usa-alert-text">Can't reach the Federal Data Services Hub</p>
+              </div>
+            </div>
+
             <button class="populate usa-button-gray"
                     id="populate">Populate</button>
             <form>
@@ -169,11 +176,12 @@
                 </div>
               </fieldset>
 
-              <fieldset>
+              <fieldset id="ssn">
                 <legend>Social Security Number</legend>
                 <span class="usa-form-hint usa-datefield-hint" id="ssnHint">For example: 555-44-3210</span>
 
-                <div class="usa-date-of-birth">
+                <div class="usa-date-of-birth" id="ssn-container">
+                  <div class="verification ssn" id="verification-ssn"></div>
                   <div class="usa-datefield usa-form-group usa-form-group-month">
                     <input aria-describedby="ssnHint" class="usa-form-control" id="ssn_1" name="ssn_1" pattern="[0-9]{3}" type="number" min="000" max="999" value="" required="" aria-required="true">
                   </div>
@@ -192,20 +200,24 @@
                 <br>
                 <br>
                 <ul class="usa-unstyled-list">
-                  <li>
+                  <li id="citizen-container">
+                    <div class="verification" id="verification-citizen"></div>
                     <input id="citizen" type="checkbox" name="citizen" value="citizen">
                     <label for="citizen">I am a citizen of the United States</label>
                   </li>
-                  <li>
+                  <li id="title2-container">
+                    <div class="verification" id="verification-title2"></div>
                     <input id="title2" type="checkbox" name="title2" value="title2">
                     <label for="title2">I receive Title 2 income for a disability</label>
                   </li>
-                  <li>
+                  <li id="married-container">
+                    <div class="verification" id="verification-married"></div>
                     <input id="married" type="checkbox" name="married" value="married">
                     <label for="married">I am married</label>
                   </li>
-                  <li>
-                    <input id="employed" type="checkbox" name="empllyed" value="employed">
+                  <li id="employed-container">
+                    <div class="verification" id="verification-employed"></div>
+                    <input id="employed" type="checkbox" name="employed" value="employed">
                     <label for="employed">I am employed full-time</label>
                   </li>
                 </ul>

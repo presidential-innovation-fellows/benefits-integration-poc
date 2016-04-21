@@ -7,6 +7,12 @@ body {
       #0071bc  /* primary */
     );
   color: #212121;
+  cursor: auto;
+}
+
+body.busy,
+body.busy input[type=submit] {
+  cursor: wait;
 }
 
 body > header {
@@ -61,7 +67,51 @@ footer .usa-footer-logo-img {
   margin-bottom: 3rem;
 }
 
+#error {
+  display: none;
+}
+
 .populate {
   float: right;
   margin-top: 2em;
+}
+
+.usa-fieldset-inputs li,
+fieldset#ssn {
+  position: relative;
+}
+
+.verification {
+  background-position: center center;
+  background-size: contain;
+  height: 16px;
+  width: 24px;
+  position: absolute;
+  top: 3px;
+  left: -27px;
+}
+
+.verification.ssn {
+  top: 107px;
+}
+
+.verification.success {
+  background-image: url("../uswds-0.9.1/img/alerts/success.png");
+  background-image: url("../uswds-0.9.1/img/alerts/success.svg");
+  height: 23px;
+}
+
+.verification.error {
+  background-image: url("../uswds-0.9.1/img/alerts/error.png");
+  background-image: url("../uswds-0.9.1/img/alerts/error.svg");
+}
+
+.verification.warning {
+  background-image: url("../uswds-0.9.1/img/alerts/warning.png");
+  background-image: url("../uswds-0.9.1/img/alerts/warning.svg");
+}
+
+.verification.info {
+  background-image: url("../uswds-0.9.1/img/alerts/info.png");
+  background-image: url("../uswds-0.9.1/img/alerts/info.svg");
 }
