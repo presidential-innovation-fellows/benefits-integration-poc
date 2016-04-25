@@ -124,8 +124,10 @@ function evaluateResult(result) {
     }
 
     // these don't get verified
+    /*
     reflectVerified('#employed-container', 'info');
     reflectVerified('#married-container', 'info');
+    */
   } else {
     reflectVerified('#ssn-container', 'error');
   }
