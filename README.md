@@ -1,6 +1,8 @@
 # benefits-integration-poc
 Proof of concept for an integrated benefits application.
 
+This is a very simple UI that exists to submit data to an API driven by the **[fdsh-client](https://www.npmjs.com/package/fdsh-client)** Node.js module. That module is the interesting thing; this is just a frontend to drive it.
+
 ### Public domain
 
 This project is in the worldwide [public domain](LICENSE.md). As stated in [CONTRIBUTING](CONTRIBUTING.md):
